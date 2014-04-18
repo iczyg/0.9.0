@@ -20,6 +20,42 @@
                     "xp": 293
                 }
             ]
+        },
+        "iczyje": {
+            "battles": [
+                {
+                    "assist": 0,
+                    "battleTier": 2,
+                    "cap": 0,
+                    "credits": 3965,
+                    "damage": 197,
+                    "def": 0,
+                    "frag": 1,
+                    "idNum": 545,
+                    "name": "usa:T1_Cunningham",
+                    "originalXP": 182,
+                    "spot": 3,
+                    "tier": 1,
+                    "win": 0,
+                    "xp": 182
+                },
+                {
+                    "assist": 232,
+                    "battleTier": 7,
+                    "cap": 0,
+                    "credits": 1218,
+                    "damage": 0,
+                    "def": 0,
+                    "frag": 0,
+                    "idNum": 2817,
+                    "name": "ussr:KV-1s",
+                    "originalXP": 91,
+                    "spot": 0,
+                    "tier": 6,
+                    "win": 0,
+                    "xp": 91
+                }
+            ]
         }
     },
     "version": 1
