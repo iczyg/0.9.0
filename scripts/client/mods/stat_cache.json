@@ -1,0 +1,26 @@
+{
+    "date": "2014-04-17",
+    "players": {
+        "Booker__Dewitt": {
+            "battles": [
+                {
+                    "assist": 305,
+                    "battleTier": 8,
+                    "cap": 0,
+                    "credits": 2911,
+                    "damage": 340,
+                    "def": 0,
+                    "frag": 0,
+                    "idNum": 6465,
+                    "name": "france:AMX_12t",
+                    "originalXP": 293,
+                    "spot": 1,
+                    "tier": 6,
+                    "win": 0,
+                    "xp": 293
+                }
+            ]
+        }
+    },
+    "version": 1
+}

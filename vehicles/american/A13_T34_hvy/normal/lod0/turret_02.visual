@@ -1,0 +1,84 @@
+<turret_02.visual>
+  <node>
+    <identifier>Scene Root</identifier>
+    <transform>
+      <row0>	1.000000 0.000000 0.000000	</row0>
+      <row1>	0.000000 1.000000 0.000000	</row1>
+      <row2>	0.000000 0.000000 1.000000	</row2>
+      <row3>	0.000000 0.000000 0.000000	</row3>
+    </transform>
+    <node>
+      <identifier>HP_gunJoint</identifier>
+      <transform>
+        <row0>	1.000000 0.000000 0.000000	</row0>
+        <row1>	0.000000 1.000000 0.000000	</row1>
+        <row2>	0.000000 0.000000 1.000000	</row2>
+        <row3>	0.026000 0.535275 1.203556	</row3>
+      </transform>
+    </node>
+    <node>
+      <identifier>	lod0	</identifier>
+      <transform>
+        <row0>	1.000000 0.000000 0.000000	</row0>
+        <row1>	0.000000 1.000000 0.000000	</row1>
+        <row2>	0.000000 0.000000 1.000000	</row2>
+        <row3>	0.000000 0.000000 0.000000	</row3>
+      </transform>
+      <node>
+        <identifier>turret_02</identifier>
+        <transform>
+          <row0>	1.000000 0.000000 0.000000	</row0>
+          <row1>	0.000000 1.000000 0.000000	</row1>
+          <row2>	0.000000 0.000000 1.000000	</row2>
+          <row3>	0.000000 -1.648966 -0.610281	</row3>
+        </transform>
+      </node>
+    </node>
+  </node>
+  <renderSet>
+    <treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+    <node>Scene Root</node>
+    <geometry>
+      <vertices>	vertices	</vertices>
+      <primitive>indices</primitive>
+     <primitiveGroup>	0
+				<material>
+					<identifier>	02 - Default	</identifier>
+					<fx>	shaders/std_effects/normalmap_specmap.fx	</fx>
+					<collisionFlags>	0	</collisionFlags>
+					<materialKind>	0	</materialKind>
+					<property>	specularMap
+						<Texture>	vehicles/american/A13_T34_hvy/T34_hvy_SM.dds	</Texture>
+					</property>
+					<property>	normalMap
+						<Texture>	vehicles/american/A13_T34_hvy/T34_hvy_NM.dds	</Texture>
+					</property>
+					<property>	diffuseMap
+						<Texture>	vehicles/american/A13_T34_hvy/T34_hvy.dds	</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+			<primitiveGroup>	1
+				<material>
+					<identifier>	02 - Default1	</identifier>
+					<fx>	shaders/std_effects/normalmap_specmap.fx	</fx>
+					<collisionFlags>	0	</collisionFlags>
+					<materialKind>	0	</materialKind>
+					<property>	specularMap
+						<Texture>	vehicles/american/A13_T34_hvy/derp_SM.dds	</Texture>
+					</property>
+					<property>	normalMap
+						<Texture>	vehicles/american/A13_T34_hvy/derp_NM.dds	</Texture>
+					</property>
+					<property>	diffuseMap
+						<Texture>	vehicles/american/A13_T34_hvy/derp.dds	</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+    </geometry>
+  </renderSet>
+  <boundingBox>
+    <min>	-1.255474 -0.007038 -2.984682	</min>
+    <max>	1.487994 2.704164 1.542391	</max>
+  </boundingBox>
+</turret_02.visual>

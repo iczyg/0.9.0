@@ -1,0 +1,113 @@
+﻿<?xml version = "1.0" encoding = "utf-8"?>
+
+<!-- Default Damage Panel 0.8.5 v.2 by GambitER  Translation and colored angles by KillerEnte94 -->
+
+<damagePanel>
+
+	<!-- Config for hitlog tool general -->
+	<configListLog visible = "true"> <!-- visible (true, false) -  Display hitlog yes/no  -->
+		<lineHit updown = "up"/> <!-- updown (up, down) - Show last hit in list starting at the top (if updown = "up") When you want the latest received damage to be shown at the down end (if updown = "down") -->
+		<addFire total = "true"/> <!-- total (true, false) -->
+		<location x = "240" y = "33" centerX = "false" centerY = "false"/> <!-- x, y, - Position in the screen (if centerX/centerY = "true") or the upper left corner (if centerX/centerY = "false") -->
+		<size width = "250" height = "230"/> <!-- width - Width and height of the element -->
+		<text font = "$TextFont" size = "15" color = "0xFFFFFF" align = "left" leading="0"/>   
+		<filter size = "2" angle = "45" distance = "0" color = "0x000000" alpha = "100" strength = "150"/> <!-- Drop Shadow -->
+		<colorText number = "0xF2F2F2" fire = "0xFF6C00" timer = "0xCCCCCC"/> <!-- color - color of fire,text and timer in log in HEX format -->
+		<format>{{number}} {{time-game}}  {{dmg-one}}  {{dmg-ratio-one}}</format> <!-- Format of the hitlog {{number}} for the currents numbers of hits - Damage displayed in HP {{dmg-one}} - Damage displayed in % of health {{dmg-ratio-one}} - Current game time {{time-game}} - Time since last hit {{time-hit}} - Tab for more space {{tab}} - )) -->
+		<format_key>{{number}} {{time-hit}}  {{dmg-ratio-one}}</format_key> <!-- Same as above, only when hitting the special key on your keyboard mostly CTRL -->
+		<format_timehit fire = "Fire.." destroyed = "Tank destroyed..!"/><!-- fire - text in position of the time when your are on fire. destroyed - text when destroyed -->
+	</configListLog>
+	
+	<!-- BIG damagenumbers when you get hit -->
+	<configLastShot visible = "true"> 
+		<location x = "-185" y = "-50" centerX = "true" centerY = "true"/>
+		<text font = "$TextFont" size = "35" color = "0xE2E2E2" align = "center"/> 
+		<filter size = "3" angle = "45" distance = "0" color="0xFF0000" alpha="100" strength="250"/>
+		<delay>5</delay> <!-- Time till number disappears -->
+		<format>{{dmg-one}}</format> <!-- Format: {{dmg-one}} Single damage number- or health ratio in % {{dmg-ratio-one}} - tab for {{tab}} -->
+	</configLastShot>
+	
+	<!-- Additonal text when BURNING -->
+	<configFireMessage visible = "true"> 
+		<location x = "0" y = "-60" centerX = "true" centerY = "false"/>
+		<text font = "$UniversCondC" size = "30" color = "0xFFFFFF" align = "center"/> 
+		<filter size = "10" angle = "90" distance = "0" color = "0xE71600" alpha = "100" strength = "250"/> 
+		<format>Tank on fire!</format> <!-- Text which is shown when you're burning -->
+		<formatdefault>Тank on fire!</formatdefault> <!-- Replace the default UI message -->
+	</configFireMessage>
+	
+	<!-- Тimer since last hit -->
+	<configTimerHit visible = "true"> 
+		<location x = "235" y = "-28" centerX = "false" centerY = "false"/>
+		<size width = "100" height = "25"/>
+		<text font = "$UniversCondC" size = "15" color = "0xCCCCCC" alpha = "100" align = "left"/> 
+		<filter size = "5" angle = "90" distance = "0" color = "0x000000" alpha = "100" strength = "250"/>
+		<delay>30</delay> <!-- Time till the timer disappears -->
+		<format>{{time-hit}}</format> <!-- Gametime as time {{time-game}} -  {{time-hit}} - Time since last hit as a counter. {{tab}} - tab)) -->
+		<format_key>{{time-game}}</format_key> <!-- As above, when hitting the special button on your keyboard CTRL -->
+	</configTimerHit>
+	
+	<!-- Repairanimationtimer of damaged modules -->
+	<configRepairAnimation visible = "true"/>
+	<configRepairTimer visible = "true">
+		<location x = "6" y = "4"/>
+		<size width = "45" height = "39"/>
+		<text font = "$UniversCondC" size = "12" color = "0xCCCCCC" align = "left"/>
+		<filter size = "5" angle = "90" distance = "0" color = "0x000000" alpha = "100" strength = "250"/>
+		<format>dsec</format> <!-- Time format displayed  (sec - "xx", dsec - "xx.x", csec - "xx.xx") -->
+	</configRepairTimer>
+	
+	<!-- Config of the player name -->
+	<configPlayerName visible = "true">
+		<location x = "3" y = "4" centerX = "false" centerY = "false"/>
+		<size width = "125" height = "22"/>
+		<text font = "$FieldFont" size = "13" color = "0x969687" alpha = "100" align = "left"/> 
+		<filter size = "1" angle = "90" distance = "1" color = "0x000000" alpha = "100" strength = "100"/>
+	</configPlayerName>
+	
+	<!-- Config of the tank name -->
+	<configTankName visible = "true">
+		<location x = "100" y = "4" centerX = "false" centerY = "false"/>
+		<size width = "125" height = "21"/>
+		<text font = "$FieldFont" size = "12" color = "0x7F7D6A" alpha = "100" align = "right"/> 
+		<filter size = "1" angle = "90" distance = "1" color = "0x000000" alpha = "100" strength = "100"/>
+	</configTankName>
+	
+	<!-- Config of the healthbar -->
+	<configHealthUnit visible = "true">
+		<location x = "5" y = "22" centerX = "false" centerY = "false"/>
+		<text font = "$FieldFont" size = "13" color = "0xe2e2e2" alpha = "100" align = "center"/> 
+		<filter size = "4" angle = "45" distance = "0" color = "0x000000" alpha = "100" strength = "200"/>
+		<format>{{hp}}/{{hp-max}}</format> <!-- FORMATS: {{hp}} - {{hp-ratio}} - {{hp-max}} -->
+		<format_key>{{hp-ratio}}</format_key> <!-- As above, only when hitting CTRL -->
+      <healthBar fcolor="0x009000" lcolor="0xFA0100"/> <!-- fcolor - full helthbar color, lcolor - low healthbar color. -->
+	</configHealthUnit>
+
+	<!-- Speedunit of tank -->
+	<configSpeedUnit visible = "true">
+		<text font = "$FieldFont" size = "8" color = "0x57543E" alpha = "100" align = "left"/>
+		<filter size = "2" angle = "90" distance = "0" color = "0x000000" alpha = "100" strength = "45"/>
+		<format>km/h</format>
+	</configSpeedUnit>
+	
+	<!-- Current speed of tank -->
+	<configSpeedTank visible = "true">
+		<text font = "$UniversCondC" size = "15" color = "0x888359" alpha = "100" align = "left"/>
+		<filter size = "2" angle = "90" distance = "0" color = "0x000000" alpha = "100" strength = "45"/>
+	</configSpeedTank>
+	
+	<!-- Background opacity -->
+	<configBackground alpha = "100"/> <!-- Alpha from 0 to 100 -->
+	
+	<!-- Config of the special alternative key -->
+	<configKey>
+		<textAlt key = "19"/> <!-- Special key is CTRL -->
+		<panelVersion key = "112"/> <!-- Key to show current version of Damagepanel is F1 appearing in the lower left corner-->
+	</configKey>
+
+	<!-- Sounds -->
+	<configSound included = "off"> <!-- included (on, off) -->
+		<developments fireAlert = "off" criticalAmmoBay = "off"/> <!-- fireAlert (on, off) ---> 
+	</configSound>
+	
+</damagePanel>

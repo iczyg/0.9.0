@@ -1,0 +1,79 @@
+<hull.visual>
+  <node>
+    <identifier>Scene Root</identifier>
+    <transform>
+      <row0>	1.000000 0.000000 0.000000	</row0>
+      <row1>	0.000000 1.000000 0.000000	</row1>
+      <row2>	0.000000 0.000000 1.000000	</row2>
+      <row3>	0.000000 0.000000 0.000000	</row3>
+    </transform>
+    <node>
+      <identifier>HP_Fire_1</identifier>
+      <transform>
+        <row0>	1.000000 0.000000 0.000000	</row0>
+        <row1>	0.000000 1.000000 0.000000	</row1>
+        <row2>	0.000000 0.000000 1.000000	</row2>
+        <row3>	-0.850894 -3.628510 -3.094184	</row3>
+      </transform>
+    </node>
+    <node>
+      <identifier>HP_Fire_2</identifier>
+      <transform>
+        <row0>	1.000000 0.000000 0.000000	</row0>
+        <row1>	0.000000 1.000000 0.000000	</row1>
+        <row2>	0.000000 0.000000 1.000000	</row2>
+        <row3>	-0.488653 -3.612038 1.612165	</row3>
+      </transform>
+    </node>
+    <node>
+      <identifier>HP_turretJoint</identifier>
+      <transform>
+        <row0>	1.000000 0.000000 0.000000	</row0>
+        <row1>	0.000000 1.000000 0.000000	</row1>
+        <row2>	0.000000 0.000000 1.000000	</row2>
+        <row3>	-0.010441 0.981897 -0.172205	</row3>
+      </transform>
+    </node>
+    <node>
+      <identifier>	lod1	</identifier>
+      <transform>
+        <row0>	1.000000 0.000000 0.000000	</row0>
+        <row1>	0.000000 1.000000 0.000000	</row1>
+        <row2>	0.000000 0.000000 1.000000	</row2>
+        <row3>	0.000000 0.000000 0.000000	</row3>
+      </transform>
+      <node>
+        <identifier>	hull	</identifier>
+        <transform>
+          <row0>	1.000000 0.000000 0.000000	</row0>
+          <row1>	0.000000 1.000000 0.000000	</row1>
+          <row2>	0.000000 0.000000 1.000000	</row2>
+          <row3>	0.000000 -0.900000 0.000000	</row3>
+        </transform>
+      </node>
+      <node>
+        <identifier>hull_inside</identifier>
+        <transform>
+          <row0>	1.000000 0.000000 0.000000	</row0>
+          <row1>	0.000000 1.000000 0.000000	</row1>
+          <row2>	0.000000 0.000000 1.000000	</row2>
+          <row3>	0.000000 -0.900000 0.000000	</row3>
+        </transform>
+      </node>
+    </node>
+  </node>
+  <renderSet>
+    <treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+    <node>Scene Root</node>
+    <geometry>
+      <vertices>	vertices	</vertices>
+      <primitive>indices</primitive>
+      <primitiveGroup>	0	<material><identifier>tank_ins_mat</identifier><fx>shaders/std_effects/lightonly.fx</fx><collisionFlags>	0	</collisionFlags><materialKind>	0	</materialKind><property>diffuseMap<Texture>vehicles/german/G01_Pz_IV_AusfG/PzIV_AusfG_crash_inside.dds</Texture></property></material></primitiveGroup>
+      <primitiveGroup>	1	<material><identifier>tank_mat</identifier><fx>shaders/std_effects/lightonly.fx</fx><property>diffuseMap<Texture>vehicles/german/G55_E-75/E-75_crash.dds</Texture></property></material></primitiveGroup>
+    </geometry>
+  </renderSet>
+  <boundingBox>
+    <min>	-2.438352 -0.922424 -4.284605	</min>
+    <max>	2.470331 1.255909 3.764625	</max>
+  </boundingBox>
+</hull.visual>

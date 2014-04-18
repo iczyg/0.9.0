@@ -1,0 +1,80 @@
+<hull.visual>
+  <node>
+    <identifier>Scene Root</identifier>
+    <transform>
+      <row0>	1.000000 0.000000 0.000000	</row0>
+      <row1>	0.000000 1.000000 0.000000	</row1>
+      <row2>	0.000000 0.000000 1.000000	</row2>
+      <row3>	0.000000 0.000000 0.000000	</row3>
+    </transform>
+    <node>
+      <identifier>HP_Fire_1</identifier>
+      <transform>
+        <row0>	1.000000 0.000000 0.000000	</row0>
+        <row1>	0.000000 1.000000 0.000000	</row1>
+        <row2>	0.000000 0.000000 1.000000	</row2>
+        <row3>	-0.006987 0.000000 2.407610	</row3>
+      </transform>
+    </node>
+    <node>
+      <identifier>HP_Fire_2</identifier>
+      <transform>
+        <row0>	1.000000 0.000000 0.000000	</row0>
+        <row1>	0.000000 1.000000 0.000000	</row1>
+        <row2>	0.000000 0.000000 1.000000	</row2>
+        <row3>	-0.448401 -0.288901 1.338088	</row3>
+      </transform>
+    </node>
+    <node>
+      <identifier>HP_turretJoint</identifier>
+      <transform>
+        <row0>	1.000000 0.000000 0.000000	</row0>
+        <row1>	0.000000 1.000000 0.000000	</row1>
+        <row2>	0.000000 0.000000 1.000000	</row2>
+        <row3>	0.005961 0.803962 -0.026929	</row3>
+      </transform>
+    </node>
+    <node>
+      <identifier>	lod1	</identifier>
+      <transform>
+        <row0>	1.000000 0.000000 0.000000	</row0>
+        <row1>	0.000000 1.000000 0.000000	</row1>
+        <row2>	0.000000 0.000000 1.000000	</row2>
+        <row3>	0.000000 0.000000 0.000000	</row3>
+      </transform>
+      <node>
+        <identifier>	hull	</identifier>
+        <transform>
+          <row0>	1.000000 0.000000 0.000000	</row0>
+          <row1>	0.000000 1.000000 0.000000	</row1>
+          <row2>	0.000000 0.000000 1.000000	</row2>
+          <row3>	0.000000 -0.972605 0.000000	</row3>
+        </transform>
+      </node>
+      <node>
+        <identifier>hull_inside</identifier>
+        <transform>
+          <row0>	1.000000 0.000000 0.000000	</row0>
+          <row1>	0.000000 1.000000 0.000000	</row1>
+          <row2>	0.000000 0.000000 1.000000	</row2>
+          <row3>	0.000000 -0.972605 0.000000	</row3>
+        </transform>
+      </node>
+    </node>
+  </node>
+  <renderSet>
+    <treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+    <node>Scene Root</node>
+    <geometry>
+      <vertices>	vertices	</vertices>
+      <primitive>indices</primitive>
+      <primitiveGroup>	1	<material><identifier>tank_ins_mat</identifier><fx>shaders/std_effects/lightonly.fx</fx><property>diffuseMap<Texture>vehicles/american/crash_inside/crash_inside.dds</Texture></property></material></primitiveGroup>
+      <primitiveGroup>	0	<material><identifier>tank_mat</identifier><fx>shaders/std_effects/lightonly.fx</fx><property>diffuseMap<Texture>vehicles/american/A30_M10_Wolverine/M10_Wolverine_crash.dds</Texture></property></material></primitiveGroup>
+      <primitiveGroup>	2	<material><identifier>AJ_mat</identifier><fx>shaders/std_effects/lightonly.fx</fx><collisionFlags>	0	</collisionFlags><materialKind>	0	</materialKind><property>diffuseMap<Texture>vehicles/american/A30_M10_Wolverine/AJCrash.dds</Texture></property></material></primitiveGroup>
+    </geometry>
+  </renderSet>
+  <boundingBox>
+    <min>	-1.772120 -1.008913 -3.496454	</min>
+    <max>	2.086424 1.011017 2.895405	</max>
+  </boundingBox>
+</hull.visual>

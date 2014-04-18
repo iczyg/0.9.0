@@ -1,0 +1,121 @@
+<turret_02.visual>
+  <node>
+    <identifier>Scene Root</identifier>
+    <transform>
+      <row0>	1.000000 0.000000 0.000000	</row0>
+      <row1>	0.000000 1.000000 0.000000	</row1>
+      <row2>	0.000000 0.000000 1.000000	</row2>
+      <row3>	0.000000 0.000000 0.000000	</row3>
+    </transform>
+    <node>
+      <identifier>HP_gunJoint</identifier>
+      <transform>
+        <row0>	1.000000 0.000000 0.000000	</row0>
+        <row1>	0.000000 1.000000 0.000000	</row1>
+        <row2>	0.000000 0.000000 1.000000	</row2>
+        <row3>	0.000000 0.329090 0.898848	</row3>
+      </transform>
+    </node>
+    <node>
+      <identifier>	lod1	</identifier>
+      <transform>
+        <row0>	1.000000 0.000000 0.000000	</row0>
+        <row1>	0.000000 1.000000 0.000000	</row1>
+        <row2>	0.000000 0.000000 1.000000	</row2>
+        <row3>	0.000000 0.000000 0.000000	</row3>
+      </transform>
+      <node>
+        <identifier>turret_02</identifier>
+        <transform>
+          <row0>	1.000000 0.000000 0.000000	</row0>
+          <row1>	0.000000 1.000000 0.000000	</row1>
+          <row2>	0.000000 0.000000 1.000000	</row2>
+          <row3>	0.000000 -1.468529 0.039203	</row3>
+        </transform>
+      </node>
+    </node>
+  </node>
+  <renderSet>
+    <treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+    <node>Scene Root</node>
+    <geometry>
+      <vertices>	vertices	</vertices>
+      <primitive>indices</primitive>
+     		<primitiveGroup>	0
+				<material> 
+                                        <identifier>  tank_mat	</identifier>
+					<fx>	shaders/std_effects/lightonly.fx	</fx>
+					<collisionFlags>	0	</collisionFlags>
+					<materialKind>	0	</materialKind>
+					<property>	diffuseMap
+						<Texture>	vehicles/american/A41_M18_Hellcat/M18_Hellcat.dds	</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+			<primitiveGroup>	2
+				<material>
+					<identifier>	Twi_mat	</identifier>
+					<fx>	shaders/std_effects/lightonly.fx	</fx>
+					<collisionFlags>	0	</collisionFlags>
+					<materialKind>	0	</materialKind>
+					<property>	diffuseMap
+						<Texture>	vehicles/american/A41_M18_Hellcat/Twi.dds	</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+			<primitiveGroup>	3
+				<material>
+					<identifier>	Books_mat	</identifier>
+					<fx>	shaders/std_effects/lightonly.fx	</fx>
+					<collisionFlags>	0	</collisionFlags>
+					<materialKind>	0	</materialKind>
+					<property>	diffuseMap
+						<Texture>	vehicles/american/A41_M18_Hellcat/Books.dds	</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+			<primitiveGroup>	1
+				<material>
+					<identifier>	magic_mat	</identifier>
+					<fx>	shaders/std_effects/normalmap_specmap_alpha.fx	</fx>
+					<collisionFlags>	0	</collisionFlags>
+					<materialKind>	0	</materialKind>
+					<property>	texAddressMode
+						<Int>	1	</Int>
+					</property>
+					<property>	specularMap
+						<Texture>	vehicles/american/A41_M18_Hellcat/Magic_SM.dds	</Texture>
+					</property>
+					<property>	alphaReference
+						<Int>	0	</Int>
+					</property>
+					<property>	alphaTestEnable
+						<Bool>	false	</Bool>
+					</property>
+					<property>	selfIllumination
+						<Float>	1.000000	</Float>
+					</property>
+					<property>	doubleSided
+						<Bool>	true	</Bool>
+					</property>
+					<property>	normalMap
+						<Texture>	vehicles/american/A41_M18_Hellcat/Magic_NM.dds	</Texture>
+					</property>
+					<property>	diffuseMap
+						<Texture>	vehicles/american/A41_M18_Hellcat/Magic.dds	</Texture>
+					</property>
+					<property>	destBlend
+						<Int>	8	</Int>
+					</property>
+					<property>	srcBlend
+						<Int>	5	</Int>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+  </renderSet>
+  <boundingBox>
+    <min>	-1.053494 -0.226198 -2.175692	</min>
+    <max>	1.053454 1.420049 1.149512	</max>
+  </boundingBox>
+</turret_02.visual>

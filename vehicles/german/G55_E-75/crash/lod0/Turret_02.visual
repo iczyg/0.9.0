@@ -1,0 +1,101 @@
+<turret_02.visual>
+   <node>
+    <identifier>Scene Root</identifier>
+    <transform>
+      <row0>	1.000000 0.000000 0.000000	</row0>
+      <row1>	0.000000 1.000000 0.000000	</row1>
+      <row2>	0.000000 0.000000 1.000000	</row2>
+      <row3>	0.000000 0.000000 0.000000	</row3>
+    </transform>
+    <node>
+      <identifier>HP_gunJoint</identifier>
+      <transform>
+        <row0>	1.000000 0.000000 0.000000	</row0>
+        <row1>	0.000000 1.000000 0.000000	</row1>
+        <row2>	0.000000 0.000000 1.000000	</row2>
+        <row3>	0.062704 0.415742 1.453041	</row3>
+      </transform>
+    </node>
+    <node>
+      <identifier>	lod0	</identifier>
+      <transform>
+        <row0>	1.000000 0.000000 0.000000	</row0>
+        <row1>	0.000000 1.000000 0.000000	</row1>
+        <row2>	0.000000 0.000000 1.000000	</row2>
+        <row3>	0.000000 0.000000 0.000000	</row3>
+      </transform>
+      <node>
+        <identifier>turret_02</identifier>
+        <transform>
+          <row0>	1.000000 0.000000 0.000000	</row0>
+          <row1>	0.000000 1.000000 0.000000	</row1>
+          <row2>	0.000000 0.000000 1.000000	</row2>
+          <row3>	0.010441 -1.881896 0.172205	</row3>
+        </transform>
+      </node>
+    </node>
+  </node>
+  <renderSet>
+    <treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+    <node>Scene Root</node>
+    <geometry>
+      <vertices>	vertices	</vertices>
+      <primitive>indices</primitive>
+    <primitiveGroup>	1
+				<material>
+					<identifier>	tank_mat	</identifier>
+					<fx>	shaders/std_effects/normalmap_specmap.fx	</fx>
+					<collisionFlags>	0	</collisionFlags>
+					<materialKind>	0	</materialKind>
+					<property>	specularMap
+						<Texture>	vehicles/german/G55_E-75/E-75_SM.dds	</Texture>
+					</property>
+					<property>	normalMap
+						<Texture>	vehicles/german/G55_E-75/E-75_NM.dds	</Texture>
+					</property>
+					<property>	diffuseMap
+						<Texture>	vehicles/german/G55_E-75/E-75_crash.dds	</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+			<primitiveGroup>	2
+				<material>
+					<identifier>	Trixie_mat	</identifier>
+					<fx>	shaders/std_effects/normalmap_specmap.fx	</fx>
+					<collisionFlags>	0	</collisionFlags>
+					<materialKind>	0	</materialKind>
+					<property>	specularMap
+						<Texture>	vehicles/german/G55_E-75/Trixie_SM.dds	</Texture>
+					</property>
+					<property>	normalMap
+						<Texture>	vehicles/german/G55_E-75/Trixie_NM.dds	</Texture>
+					</property>
+					<property>	diffuseMap
+						<Texture>	vehicles/german/G55_E-75/TrixieAlt.dds	</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+			<primitiveGroup>	0
+				<material>
+					<identifier>	Stuff_mat	</identifier>
+					<fx>	shaders/std_effects/normalmap_specmap.fx	</fx>
+					<collisionFlags>	0	</collisionFlags>
+					<materialKind>	0	</materialKind>
+					<property>	specularMap
+						<Texture>	vehicles/german/G55_E-75/Stuff_SM.dds	</Texture>
+					</property>
+					<property>	normalMap
+						<Texture>	vehicles/german/G55_E-75/Stuff_NM.dds	</Texture>
+					</property>
+					<property>	diffuseMap
+						<Texture>	vehicles/german/G55_E-75/Stuff.dds	</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+    </geometry>
+  </renderSet>
+  <boundingBox>
+    <min>	-1.490122 -0.116418 -2.137249	</min>
+    <max>	1.362538 1.416864 1.632132	</max>
+  </boundingBox>
+</turret_02.visual>

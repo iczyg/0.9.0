@@ -1,0 +1,111 @@
+<Hull.visual>
+	<node>
+		<identifier>	Scene Root	</identifier>
+		<transform>
+			<row0>	1.000000 0.000000 0.000000	</row0>
+			<row1>	0.000000 1.000000 0.000000	</row1>
+			<row2>	0.000000 0.000000 1.000000	</row2>
+			<row3>	0.000000 0.000000 0.000000	</row3>
+		</transform>
+		<node>
+			<identifier>	HP_Fire_1	</identifier>
+			<transform>
+				<row0>	1.000000 0.000000 0.000000	</row0>
+				<row1>	0.000000 1.000000 0.000000	</row1>
+				<row2>	0.000000 0.000000 1.000000	</row2>
+				<row3>	0.006857 0.487506 -2.278936	</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>	HP_Fire_2	</identifier>
+			<transform>
+				<row0>	1.000000 0.000000 0.000000	</row0>
+				<row1>	0.000000 1.000000 0.000000	</row1>
+				<row2>	0.000000 0.000000 1.000000	</row2>
+				<row3>	-0.656892 -0.177153 2.8	</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>	HP_turretJoint	</identifier>
+			<transform>
+				<row0>	1.000000 0.000000 0.000000	</row0>
+				<row1>	0.000000 1.000000 0.000000	</row1>
+				<row2>	0.000000 0.000000 1.000000	</row2>
+				<row3>	0.000000 0.566587 0.610281	</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>	lod0	</identifier>
+			<transform>
+				<row0>	1.000000 0.000000 0.000000	</row0>
+				<row1>	0.000000 1.000000 0.000000	</row1>
+				<row2>	0.000000 0.000000 1.000000	</row2>
+				<row3>	0.000000 0.000000 0.000000	</row3>
+			</transform>
+			<node>
+				<identifier>	hull	</identifier>
+				<transform>
+					<row0>	1.000000 0.000000 0.000000	</row0>
+					<row1>	0.000000 1.000000 0.000000	</row1>
+					<row2>	0.000000 0.000000 1.000000	</row2>
+					<row3>	0.000000 -1.082379 0.000000	</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>	hull_inside	</identifier>
+				<transform>
+					<row0>	1.000000 0.000000 0.000000	</row0>
+					<row1>	0.000000 1.000000 0.000000	</row1>
+					<row2>	0.000000 0.000000 1.000000	</row2>
+					<row3>	0.000000 -1.082379 0.000000	</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+		<node>	Scene Root	</node>
+		<geometry>
+			<vertices>	vertices	</vertices>
+			<primitive>	indices	</primitive>
+			<primitiveGroup>	0
+				<material>
+					<identifier>	02 - Default	</identifier>
+					<fx>	shaders/std_effects/normalmap_specmap.fx	</fx>
+					<collisionFlags>	0	</collisionFlags>
+					<materialKind>	0	</materialKind>
+					<property>	specularMap
+						<Texture>	vehicles/american/A13_T34_hvy/derp_SM.dds	</Texture>
+					</property>
+					<property>	normalMap
+						<Texture>	vehicles/american/A13_T34_hvy/derp_NM.dds	</Texture>
+					</property>
+					<property>	diffuseMap
+						<Texture>	vehicles/american/A13_T34_hvy/derp.dds	</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+			<primitiveGroup>	1
+				<material>
+					<identifier>	01 - Default	</identifier>
+					<fx>	shaders/std_effects/normalmap_specmap.fx	</fx>
+					<collisionFlags>	0	</collisionFlags>
+					<materialKind>	0	</materialKind>
+					<property>	specularMap
+						<Texture>	vehicles/american/A13_T34_hvy/T34_hvy_SM.dds	</Texture>
+					</property>
+					<property>	normalMap
+						<Texture>	vehicles/american/A13_T34_hvy/T34_hvy_NM.dds	</Texture>
+					</property>
+					<property>	diffuseMap
+						<Texture>	vehicles/american/A13_T34_hvy/T34_hvy_crash.dds	</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>	-2.405215 -1.196054 -4.109412	</min>
+		<max>	2.405215 0.807668 4.051383	</max>
+	</boundingBox>
+</Hull.visual>
